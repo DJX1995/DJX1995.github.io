@@ -3,71 +3,87 @@
 <head>
   <meta charset="UTF-8">
   <title>Jianxiang Dong</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      max-width: 800px;
-      margin: auto;
-      line-height: 1.6;
-      padding: 20px;
+    body { font-family: Arial, sans-serif; margin: 0; background-color: #f5f5f5; }
+    .container { display: flex; max-width: 1200px; margin: auto; padding: 20px; }
+
+    /* Sidebar */
+    .sidebar {
+      width: 280px; background: white; padding: 20px; text-align: center;
+      border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.1); margin-right: 30px;
     }
-    h1 { color: #2c3e50; }
-    h2 { color: #34495e; }
-    img { border-radius: 50%; width: 180px; margin-bottom: 20px; }
-    a { color: #007acc; text-decoration: none; }
-    a:hover { text-decoration: underline; }
-    ul { padding-left: 20px; }
+    .sidebar img { width: 150px; border-radius: 50%; margin-bottom: 15px; }
+    .sidebar h2 { margin: 10px 0 5px; }
+    .sidebar p { color: #666; font-size: 14px; }
+    .sidebar a { display: block; text-decoration: none; color: #007acc; margin-top: 8px; }
+
+    /* Main Content */
+    .content {
+      flex: 1; background: white; padding: 20px; border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    .content h1 { margin-top: 0; }
+    .content h2 { margin-top: 30px; border-bottom: 2px solid #eee; padding-bottom: 5px; }
+    .publication { display: flex; align-items: center; margin-bottom: 20px; }
+    .publication img { width: 120px; height: 80px; object-fit: cover; margin-right: 15px; border-radius: 5px; }
+    .publication div { font-size: 14px; }
   </style>
 </head>
-
 <body>
-  <!-- Profile Image -->
-  <center>
-    <img src="daily photo crop.JPG" alt="Jianxiang Dong">
-    <h1>Jianxiang Dong (董健翔)</h1>
-    <p>Email: jianxiang.dong@stonybrook.edu</p>
-    <p>
-      Lab: Computer Vision Lab, Stony Brook University (CVLab), 
-      supervised by <a href="https://www3.cs.stonybrook.edu/~cv1/" target="_blank">Professor Zhaozheng Yin</a>
-    </p>
-    <p>
-      <a href="Jianxiang_Dong_s_CV.pdf" target="_blank">CV</a> | 
-      <a href="https://scholar.google.com/" target="_blank">Google Scholar</a> | 
-      <a href="www.linkedin.com/in/jianxiangdong-9a5311178" target="_blank">LinkedIn</a>
-    </p>
-  </center>
+  <div class="container">
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <img src="profile.jpg" alt="Jianxiang Dong">
+      <h2>Jianxiang Dong</h2>
+      <p>PhD Candidate in Computer Science</p>
+      <p>Stony Brook University</p>
+      <a href="mailto:jianxiang.dong@stonybrook.edu">📧 Email</a>
+      <a href="https://www.linkedin.com/in/jianxiangdong-9a5311178" target="_blank">LinkedIn</a>
+      <a href="https://scholar.google.com/" target="_blank">Google Scholar</a>
+      <a href="Jianxiang_Dong_s_CV.pdf" target="_blank">📄 CV</a>
+    </div>
 
-  <!-- Research Interests -->
-  <h2>Research Interests</h2>
-  <ul>
-    <li>Multimodal deep learning for vision–language tasks</li>
-    <li>Language-based video retrieval and temporal grounding</li>
-    <li>Large-scale vision–language models (e.g., multimodal LLMs)</li>
-  </ul>
+    <!-- Main Content -->
+    <div class="content">
+      <h1>About Me</h1>
+      <p>
+        I am a Ph.D. candidate in Computer Science at 
+        <a href="https://www.stonybrook.edu/" target="_blank">Stony Brook University</a>,
+        supervised by <a href="https://www3.cs.stonybrook.edu/~cv1/" target="_blank">Professor Zhaozheng Yin</a>.
+        My research interests lie in multimodal deep learning, language-based video retrieval,
+        temporal sentence grounding, and biomedical image analysis.
+      </p>
+      <p>
+        I will be graduating in 2026 and am seeking opportunities in AI/ML research. 
+        Please feel free to reach out via email.
+      </p>
 
-  <!-- Publications -->
-  <h2>Publications</h2>
-  <ul>
-    <li>
-      <strong>Boundary-aware Temporal Sentence Grounding with Adaptive Proposal Refinement</strong><br>
-      <b>Jianxiang Dong</b>, Zhaozheng Yin<br>
-      <em>ACCV 2022</em>
-    </li>
-    <li>
-      <strong>Bragg Spot Finder (BSF): A Machine-learning-aided Approach for Diffraction Spot Filtering</strong><br>
-      <b>Jianxiang Dong</b>, Zhaozheng Yin, Dale Kreitler, Herbert J. Bernstein, Jean Jakoncic<br>
-      <em>Journal of Applied Crystallography, 2024</em>
-    </li>
-    <li>
-      <strong>Graph-based Dense Event Grounding with Relative Positional Encoding</strong><br>
-      <b>Jianxiang Dong</b>, Zhaozheng Yin<br>
-      <em>CVIU, 2024</em>
-    </li>
-    <li>
-      <strong>Weakly Semi-supervised Temporal Sentence Grounding in Videos with Point Annotations</strong><br>
-      <b>Jianxiang Dong</b>, Zhaozheng Yin<br>
-      <em>IEEE TMM, 2025 (Accepted)</em>
-    </li>
-  </ul>
+      <h2>Research Interests</h2>
+      <ul>
+        <li>Multimodal deep learning for vision-language tasks</li>
+        <li>Language-based Video retrieval and temporal grounding</li>
+        <li>Large-scale vision–language models (e.g., multimodal LLMs);</li>
+      </ul>
+
+      <h2>Selected Publications</h2>
+      <div class="publication">
+        <img src="paper1.jpg" alt="Paper image">
+        <div>
+          <b>Weakly Semi-supervised Temporal Sentence Grounding in Videos with Point Annotations</b><br>
+          <b>Jianxiang Dong</b>, Zhaozheng Yin<br>
+          <i>IEEE Transactions on Multimedia, 2025</i>
+        </div>
+      </div>
+      <div class="publication">
+        <img src="paper2.jpg" alt="Paper image">
+        <div>
+          <b>Graph-based Dense Event Grounding with Relative Positional Encoding</b><br>
+          <b>Jianxiang Dong</b>, Zhaozheng Yin<br>
+          <i>Computer Vision and Image Understanding, 2024</i>
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
